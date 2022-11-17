@@ -8,7 +8,7 @@ import { SignalHandler } from './signal-handler';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnDestroy {
-  name = 'Angular ' + VERSION.major;
+  name = 'Navbar Call Area Tester';
   signalingChannel = webSocket(
     'wss://socketsbay.com/wss/v2/100/f9b5066412b5d042266ff9a20e60a0ae/'
   );

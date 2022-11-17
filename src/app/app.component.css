@@ -1,3 +1,8 @@
 p {
   font-family: Lato;
 }
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
