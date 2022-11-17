@@ -44,6 +44,16 @@ export class AppComponent implements OnDestroy {
     );
   }
 
+  calleeSpeaking() {
+    this.signalingChannel.next(
+      JSON.stringify({
+        selectableObjects: [{ userId: 'IVU12345678', userType: 'VEHICLE' }],
+        pttState: 'ASSIGNED_OTHER_USER',
+        callState: 'CONNECTED',
+      })
+    );
+  }
+
   disconnectingCall() {
     this.signalingChannel.next(
       JSON.stringify({
